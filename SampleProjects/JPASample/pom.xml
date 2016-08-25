@@ -1,11 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.training.samples</groupId>
-  <artifactId>SampleProjects</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <modules>
-  	<module>CXFSamples</module>
-  	<module>JPASample</module>
-  </modules>
+  <parent>
+    <groupId>com.training.samples</groupId>
+    <artifactId>SampleProjects</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.training.samples.jpa</groupId>
+  <artifactId>JPASample</artifactId>
 </project>
