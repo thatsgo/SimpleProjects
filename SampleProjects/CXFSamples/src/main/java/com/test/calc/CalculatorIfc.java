@@ -26,7 +26,7 @@ public interface CalculatorIfc {
 	 * @param num2
 	 * @return
 	 */
-	@WebMethod
+	@WebMethod(operationName="")
 	public int subtraction(int num1, int num2);
 
 	/**
