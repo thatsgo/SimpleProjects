@@ -4,8 +4,8 @@
 	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 	<persistence-unit name="User" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>com.jpa.one.to.many.relationship.Employee</class>
-		<class>com.jpa.one.to.many.relationship.Address</class>
+ 		<class>com.jpa.one.to.many.relationship.Employee</class>
+		<class>com.jpa.one.to.many.relationship.Address</class> 
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/krishna" />

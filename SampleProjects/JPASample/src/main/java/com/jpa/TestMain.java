@@ -1,5 +1,8 @@
 package com.jpa;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -29,6 +32,9 @@ public class TestMain {
 		user.setName("Tom Johnson");
 		user.setLogin("tomj");
 		user.setPassword("pass");
+		System.out.println(LocalDateTime.now());
+		user.setLoginDateTime(LocalDateTime.now());
+		user.setArrival(LocalDate.now(ZoneId.systemDefault()));
 		em.persist(user);
 		em.getTransaction().commit();
 
